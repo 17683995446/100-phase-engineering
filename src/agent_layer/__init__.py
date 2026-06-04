@@ -1,0 +1,121 @@
+"""
+智能协作层 - Layer 3
+多角色Agent交互、任务分发、协商会诊
+"""
+
+from .base import BaseAgent
+from .simple_agent import SimpleAgent, SimpleTeam
+from .agent_roles import (
+    AgentStatus,
+    AgentCapability,
+    CapabilityProfile,
+    AgentContext,
+    AgentMessage,
+    AgentRegistry,
+    AgentFactory,
+    AgentCollaborationHub,
+    OrchestratorAgent,
+    AnalyzerAgent,
+    ArchitectAgent,
+    DeveloperAgent,
+    DebuggerAgent,
+    ReviewerAgent,
+    TestAgent,
+    DocumenterAgent,
+    ALL_AGENT_ROLES,
+    get_collaboration_hub
+)
+from .workflow import (
+    WorkflowStatus,
+    StepStatus,
+    StepType,
+    WorkflowStep,
+    StepResult,
+    WorkflowDefinition,
+    WorkflowExecution,
+    WorkflowTemplate,
+    AgentWorkflowEngine,
+    get_workflow_engine
+)
+from .protocol import (
+    MessageProtocol,
+    MessagePriority,
+    RoutingStrategy,
+    MessageEnvelope,
+    RoutingRule,
+    MessageFilter,
+    PriorityMessageQueue,
+    MessageRouter,
+    AgentCollaborationProtocol,
+    get_collaboration_protocol,
+    send_request,
+    send_command,
+    broadcast_event
+)
+from .capability import (
+    LearningMode,
+    SkillLevel,
+    SkillRecord,
+    CapabilityMetrics,
+    LearnedPattern,
+    AgentLearningEngine,
+    CapabilityAssessment,
+    DynamicCapabilityManager,
+    get_capability_manager
+)
+
+__all__ = [
+    "BaseAgent",
+    "SimpleAgent",
+    "SimpleTeam",
+    "AgentStatus",
+    "AgentCapability",
+    "CapabilityProfile",
+    "AgentContext",
+    "AgentMessage",
+    "AgentRegistry",
+    "AgentFactory",
+    "AgentCollaborationHub",
+    "OrchestratorAgent",
+    "AnalyzerAgent",
+    "ArchitectAgent",
+    "DeveloperAgent",
+    "DebuggerAgent",
+    "ReviewerAgent",
+    "TestAgent",
+    "DocumenterAgent",
+    "ALL_AGENT_ROLES",
+    "get_collaboration_hub",
+    "WorkflowStatus",
+    "StepStatus",
+    "StepType",
+    "WorkflowStep",
+    "StepResult",
+    "WorkflowDefinition",
+    "WorkflowExecution",
+    "WorkflowTemplate",
+    "AgentWorkflowEngine",
+    "get_workflow_engine",
+    "MessageProtocol",
+    "MessagePriority",
+    "RoutingStrategy",
+    "MessageEnvelope",
+    "RoutingRule",
+    "MessageFilter",
+    "PriorityMessageQueue",
+    "MessageRouter",
+    "AgentCollaborationProtocol",
+    "get_collaboration_protocol",
+    "send_request",
+    "send_command",
+    "broadcast_event",
+    "LearningMode",
+    "SkillLevel",
+    "SkillRecord",
+    "CapabilityMetrics",
+    "LearnedPattern",
+    "AgentLearningEngine",
+    "CapabilityAssessment",
+    "DynamicCapabilityManager",
+    "get_capability_manager"
+]
